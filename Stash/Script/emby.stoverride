@@ -12,5 +12,5 @@ http:
       timeout: 10
       
 script-providers:
-  Baidu:
+  emby:
     url: https://gitlab.com/iptv-org/embypublic/-/raw/master/Script/EmbyPremiere.js
