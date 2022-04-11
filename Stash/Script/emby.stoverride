@@ -3,7 +3,7 @@ desc: emby validateDevice
 
 http:
   mitm:
-    - "boxer.baidu.com"
+    - "%APPEND% mb3admin.com"
   script:
     - match: ^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice
       name: emby
