@@ -1,0 +1,16 @@
+name: emby
+desc: emby validateDevice
+
+http:
+  mitm:
+    - "boxer.baidu.com"
+  script:
+    - match: ^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice
+      name: emby
+      type: response
+      require-body: false
+      timeout: 10
+      
+script-providers:
+  Baidu:
+    url: https://gitlab.com/iptv-org/embypublic/-/raw/master/Script/EmbyPremiere.js
